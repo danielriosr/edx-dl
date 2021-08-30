@@ -1,3 +1,4 @@
+#Alternative: You can always install this packages ousing the command line, instead of running thie file.
 click
 selenium
 youtube-dl
