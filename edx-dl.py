@@ -82,7 +82,7 @@ class EdxCourse(object):
         time.sleep(16)
 
     def format_title(self, title):
-        return title.replace("\n", "_").replace(" ", "_")
+        return title.replace("\n", "_").replace(" ", "_").replace(":","_").replace("/", "_")
 
     def mkdir(self, path):
         if not os.path.exists(path):
@@ -189,7 +189,7 @@ class EdxCourse(object):
 
 @click.command()
 @click.option("--user", prompt="Edx Username or email address", required=True)
-@click.password_option("--pwd", prompt="Edx Password", required=True, confirmation_prompt=False)
+@click.option("--pwd", prompt="Edx Password", required=True)
 @click.option("--url", prompt="Course home URL", required=True)
 def run(user, pwd, url):
   course = EdxCourse(user, pwd, url)
