@@ -2,9 +2,7 @@
 
 ## 0. Motivation
 
-I was using `https://github.com/coursera-dl/edx-dl` to backup some courses I want to learn but delayed due to 1000+ reasons. However seems this project is no longer maintained. So I spend a few hours to write a small tool.
-
-This script is usable but I don't have time to do more test, and I have no plan to maintain this project. However it is straightforward to update because it is just 200 lines of code.
+I was using `https://github.com/antinucleon/edx-dl` to backup some courses I wanted to learn. However, it seems that the original author no longer can maintain it. So I updated some lines to have it properly working, and will try to keep it up to date.
 
 ## 1. Usage
 - Download `chromedriver` and put it into `./bin`
